@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M. Ahsan – WordPress Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">M.<span>Ahsan</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn-hire">Hire Me <i class="fas fa-arrow-right"></i></a>
+      <button class="burger" id="burger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about" class="mnav-link">About</a>
+      <a href="#services" class="mnav-link">Services</a>
+      <a href="#portfolio" class="mnav-link">Portfolio</a>
+      <a href="#pricing" class="mnav-link">Pricing</a>
+      <a href="#contact" class="mnav-link">Contact</a>
+      <a href="#contact" class="btn-hire" style="margin:12px 20px 20px;display:inline-flex;">Hire Me <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <div class="hero-dot-grid"></div>
+    <div class="hero-red-strip"></div>
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <span class="pulse-dot"></span> Available for New Projects — Immediate Start
+        </div>
+        <h1 class="hero-heading">
+          Expert<br/>
+          <em class="hero-outline">WordPress</em><br/>
+          Developer
+        </h1>
+        <p class="hero-sub">
+          Hi, I'm <strong>M. Ahsan</strong> — A WordPress Specialist dedicated to creating
+          high-converting, lightning-fast, and SEO-optimized digital experiences.
+          Sites that <span class="typed-wrap"><span id="typed"></span><span class="tcursor">|</span></span>
+        </p>
+        <div class="hero-tags">
+          <span><i class="fas fa-check-circle"></i> Web Development</span>
+          <span><i class="fas fa-check-circle"></i> UI &amp; UX</span>
+          <span><i class="fas fa-check-circle"></i> Speed Optimized</span>
+          <span><i class="fas fa-check-circle"></i> SEO Management</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn-primary">Get Free Consultation</a>
+          <a href="#portfolio" class="btn-outline">View Portfolio <i class="fas fa-long-arrow-alt-down"></i></a>
+        </div>
+      </div>
+      <div class="hero-img-side">
+        <div class="img-outer-ring"></div>
+        <div class="img-inner-ring"></div>
+        <img
+          src="https://ahxsn.rf.gd/wp-content/uploads/2025/09/ChatGPT-Image-Sep-17-2025-12_23_36-PM.png"
+          alt="Muhammad Ahsan"
+          class="hero-photo"
+          onerror="this.src='https://ui-avatars.com/api/?name=M+Ahsan&size=500&background=E0001B&color=ffffff&bold=true'"
+        />
+        <div class="float-badge badge-wp"><i class="fab fa-wordpress"></i> WordPress Expert</div>
+        <div class="float-badge badge-star"><i class="fas fa-star"></i> 5-Star Rated</div>
+        <div class="exp-pill"><span class="ep-num">2+</span><span class="ep-label">Years Experience</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS BAR ═══ -->
+  <div class="stats-bar" id="stats">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-val"><span class="count" data-target="120">0</span>+</div>
+        <div class="stat-lbl">Projects Done</div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <div class="stat-val"><span class="count" data-target="2">0</span>+</div>
+        <div class="stat-lbl">Years Experience</div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <div class="stat-val"><span class="count" data-target="85">0</span>+</div>
+        <div class="stat-lbl">Worldwide Clients</div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <div class="stat-val"><i class="fas fa-star" style="color:#E0001B;vertical-align:middle;"></i> 5.0</div>
+        <div class="stat-lbl">Star Rating</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ TECH TICKER ═══ -->
+  <div class="ticker-wrap">
+    <div class="ticker-inner">
+      <span class="tech-pill"><i class="fab fa-wordpress"></i> WordPress</span>
+      <span class="tech-pill"><i class="fab fa-elementor"></i> Elementor</span>
+      <span class="tech-pill"><i class="fab fa-woocommerce"></i> WooCommerce</span>
+      <span class="tech-pill"><i class="fab fa-figma"></i> Figma</span>
+      <span class="tech-pill"><i class="fab fa-html5"></i> HTML5</span>
+      <span class="tech-pill"><i class="fab fa-css3-alt"></i> CSS3</span>
+      <span class="tech-pill"><i class="fab fa-js-square"></i> JavaScript</span>
+      <span class="tech-pill"><i class="fab fa-php"></i> PHP</span>
+      <span class="tech-pill"><i class="fab fa-git-alt"></i> Git</span>
+      <span class="tech-pill"><i class="fas fa-search"></i> SEO Tools</span>
+      <!-- duplicated for loop -->
+      <span class="tech-pill"><i class="fab fa-wordpress"></i> WordPress</span>
+      <span class="tech-pill"><i class="fab fa-elementor"></i> Elementor</span>
+      <span class="tech-pill"><i class="fab fa-woocommerce"></i> WooCommerce</span>
+      <span class="tech-pill"><i class="fab fa-figma"></i> Figma</span>
+      <span class="tech-pill"><i class="fab fa-html5"></i> HTML5</span>
+      <span class="tech-pill"><i class="fab fa-css3-alt"></i> CSS3</span>
+      <span class="tech-pill"><i class="fab fa-js-square"></i> JavaScript</span>
+      <span class="tech-pill"><i class="fab fa-php"></i> PHP</span>
+      <span class="tech-pill"><i class="fab fa-git-alt"></i> Git</span>
+      <span class="tech-pill"><i class="fas fa-search"></i> SEO Tools</span>
+    </div>
+  </div>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section id="services" class="sec-pad">
+    <div class="container">
+      <div class="sec-head">
+        <div class="eyebrow"><span class="rline"></span> What I Do</div>
+        <h2 class="sec-title">Specialized <span class="red">Services</span></h2>
+        <p class="sec-desc">From concept to launch — every service built for performance, conversion, and growth.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card reveal" data-delay="0">
+          <div class="svc-top">
+            <div class="svc-icon"><i class="fab fa-figma"></i></div>
+            <span class="svc-num">01</span>
+          </div>
+          <h3>Figma to WordPress</h3>
+          <p>Pixel-perfect conversion of your Figma designs into high-performance WordPress sites with smooth animations and flawless UX.</p>
+          <a href="#contact" class="svc-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card reveal" data-delay="1">
+          <div class="svc-top">
+            <div class="svc-icon"><i class="fas fa-layer-group"></i></div>
+            <span class="svc-num">02</span>
+          </div>
+          <h3>PSD to WordPress</h3>
+          <p>Converting static PSD designs into dynamic, fully responsive WordPress themes with clean code and cross-browser compatibility.</p>
+          <a href="#contact" class="svc-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card reveal" data-delay="2">
+          <div class="svc-top">
+            <div class="svc-icon"><i class="fab fa-elementor"></i></div>
+            <span class="svc-num">03</span>
+          </div>
+          <h3>Advanced Elementor Dev</h3>
+          <p>Custom Elementor layouts and dynamic content. Lightweight, manageable websites giving you full control without constant developer help.</p>
+          <a href="#contact" class="svc-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card reveal" data-delay="3">
+          <div class="svc-top">
+            <div class="svc-icon"><i class="fas fa-shopping-cart"></i></div>
+            <span class="svc-num">04</span>
+          </div>
+          <h3>Scalable E-commerce</h3>
+          <p>Robust WooCommerce stores optimized for sales. Secure payments, inventory management, built to grow with your business.</p>
+          <a href="#contact" class="svc-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PORTFOLIO ═══ -->
+  <section id="portfolio" class="sec-pad bg-blk">
+    <div class="container">
+      <div class="sec-head">
+        <div class="eyebrow light"><span class="rline"></span> My Work</div>
+        <h2 class="sec-title wht">Curated <span class="red">Portfolio</span></h2>
+        <p class="sec-desc" style="color:#888">Custom WordPress projects built for performance and real results.</p>
+      </div>
+      <div class="port-grid">
+        <div class="port-card reveal">
+          <div class="port-thumb">
+            <img src="https://ahxsn.rf.gd/wp-content/uploads/2025/09/i1.webp" alt="Autozne"
+                 onerror="this.parentElement.classList.add('fallback-thumb')" />
+            <div class="port-overlay"><span>View Project <i class="fas fa-external-link-alt"></i></span></div>
+            <div class="port-index">01</div>
+          </div>
+          <div class="port-info">
+            <span class="port-cat">E-commerce · Booking</span>
+            <h3>Autozne Car-Rental</h3>
+            <p>Premium car-rental platform with seamless booking and user-friendly fleet management.</p>
+            <div class="port-tag-red"><i class="fas fa-bolt"></i> Automated booking &amp; dynamic pricing</div>
+          </div>
+        </div>
+        <div class="port-card reveal">
+          <div class="port-thumb">
+            <img src="https://ahxsn.rf.gd/wp-content/uploads/2025/09/i2.webp" alt="Eduvalt"
+                 onerror="this.parentElement.classList.add('fallback-thumb')" />
+            <div class="port-overlay"><span>View Project <i class="fas fa-external-link-alt"></i></span></div>
+            <div class="port-index">02</div>
+          </div>
+          <div class="port-info">
+            <span class="port-cat">EdTech · Portal</span>
+            <h3>Eduvalt School System</h3>
+            <p>Comprehensive educational portal for student management and interactive learning.</p>
+            <div class="port-tag-red"><i class="fas fa-bolt"></i> Student dashboard &amp; real-time attendance</div>
+          </div>
+        </div>
+        <div class="port-card reveal">
+          <div class="port-thumb">
+            <img src="https://ahxsn.rf.gd/wp-content/uploads/2025/09/i3.webp" alt="Appointment"
+                 onerror="this.parentElement.classList.add('fallback-thumb')" />
+            <div class="port-overlay"><span>View Project <i class="fas fa-external-link-alt"></i></span></div>
+            <div class="port-index">03</div>
+          </div>
+          <div class="port-info">
+            <span class="port-cat">Healthcare · SaaS</span>
+            <h3>Dr's Appointment System</h3>
+            <p>Streamlined healthcare solution for hassle-free appointments and patient records.</p>
+            <div class="port-tag-red"><i class="fas fa-bolt"></i> Secure portal &amp; automated reminders</div>
+          </div>
+        </div>
+        <div class="port-card reveal">
+          <div class="port-thumb">
+            <img src="https://ahxsn.rf.gd/wp-content/uploads/2025/09/i4.webp" alt="Rehabilitate Hub"
+                 onerror="this.parentElement.classList.add('fallback-thumb')" />
+            <div class="port-overlay"><span>View Project <i class="fas fa-external-link-alt"></i></span></div>
+            <div class="port-index">04</div>
+          </div>
+          <div class="port-info">
+            <span class="port-cat">Healthcare · WordPress</span>
+            <h3>Rehabilitate Hub</h3>
+            <p>Premium healthcare solution blending medical aesthetics with conversion-focused design.</p>
+            <div class="port-tag-red"><i class="fas fa-bolt"></i> User conversion &amp; seamless navigation</div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:52px;">
+        <a href="#contact" class="btn-primary">Request More Projects <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="sec-pad">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="eyebrow"><span class="rline"></span> About Me</div>
+          <h2 class="sec-title">The Mind Behind Your Next <span class="red">High-Performance</span> Website</h2>
+          <p class="about-lead">I don't just build websites — I create seamless digital experiences that help businesses scale, perform, and rank.</p>
+          <p class="about-body">With <strong>2+ years</strong> of hands-on experience, I bridge complex business requirements with scalable technical solutions. My focus: <strong>Core Web Vitals</strong>, <strong>Advanced Security</strong>, and <strong>SEO-friendly Architecture</strong>.</p>
+          <p class="about-body">Whether a startup needing its first MVP or an established brand wanting a performance boost — I build systems that are robust, responsive, and future-ready.</p>
+          <div class="about-badges">
+            <div class="abadge"><div class="abadge-icon"><i class="fab fa-wordpress"></i></div><div><strong>WordPress Expert</strong><span>Pixel-perfect results, every time</span></div></div>
+            <div class="abadge"><div class="abadge-icon"><i class="fas fa-code"></i></div><div><strong>Frontend Specialist</strong><span>Modern UI/UX &amp; responsive layouts</span></div></div>
+            <div class="abadge"><div class="abadge-icon"><i class="fas fa-shopping-bag"></i></div><div><strong>E-commerce Pro</strong><span>High-converting WooCommerce stores</span></div></div>
+          </div>
+        </div>
+
+        <div class="about-right reveal">
+          <div class="tabs-nav">
+            <button class="tabBtn active" data-tab="skills">Skills</button>
+            <button class="tabBtn" data-tab="education">Education</button>
+            <button class="tabBtn" data-tab="profile">Profile</button>
+          </div>
+
+          <div class="tab-pane active" id="tab-skills">
+            <p class="tab-note">Core technologies delivering high-speed, secure, SEO-optimized solutions.</p>
+            <div class="skbar">
+              <div class="skbar-hd"><span>Advanced WordPress Architecture</span><span class="skpct">98%</span></div>
+              <div class="skbar-track"><div class="skbar-fill" data-w="98"></div></div>
+            </div>
+            <div class="skbar">
+              <div class="skbar-hd"><span>WooCommerce &amp; Payment Integration</span><span class="skpct">96%</span></div>
+              <div class="skbar-track"><div class="skbar-fill" data-w="96"></div></div>
+            </div>
+            <div class="skbar">
+              <div class="skbar-hd"><span>Custom Theme &amp; Plugin Development</span><span class="skpct">95%</span></div>
+              <div class="skbar-track"><div class="skbar-fill" data-w="95"></div></div>
+            </div>
+            <div class="skbar">
+              <div class="skbar-hd"><span>Semantic HTML5 &amp; Accessibility</span><span class="skpct">92%</span></div>
+              <div class="skbar-track"><div class="skbar-fill" data-w="92"></div></div>
+            </div>
+            <div class="skbar">
+              <div class="skbar-hd"><span>Advanced CSS3 &amp; Animations</span><span class="skpct">82%</span></div>
+              <div class="skbar-track"><div class="skbar-fill" data-w="82"></div></div>
+            </div>
+            <div class="skbar">
+              <div class="skbar-hd"><span>Modern JS &amp; API Integration</span><span class="skpct">75%</span></div>
+              <div class="skbar-track"><div class="skbar-fill" data-w="75"></div></div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-education">
+            <div class="edu-list">
+              <div class="edu-item">
+                <div class="edu-dot"></div>
+                <div class="edu-yr">2020 – 2022</div>
+                <h4>Matriculation — Computer Science</h4>
+                <p>SSC with CS focus. Strong foundation in computing principles and introductory programming.</p>
+              </div>
+              <div class="edu-item">
+                <div class="edu-dot"></div>
+                <div class="edu-yr">2022 – 2024</div>
+                <h4>Intermediate — FSC Pre-Engineering</h4>
+                <p>Completed HSSC in Pre-Engineering with advanced scientific and analytical skills.</p>
+              </div>
+              <div class="edu-item current">
+                <div class="edu-dot"></div>
+                <div class="edu-yr">2024 – 2028 <span class="now-tag">Now</span></div>
+                <h4>BS Computer Science — BSCS</h4>
+                <p>Focusing on Software Engineering, Database Management, and OOP for scalable solutions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-profile">
+            <div class="prof-list">
+              <div class="prof-row"><div class="prof-ico"><i class="fas fa-user"></i></div><div><small>Name</small><strong>Muhammad Ahsan</strong></div></div>
+              <div class="prof-row"><div class="prof-ico"><i class="fas fa-envelope"></i></div><div><small>Email</small><strong>m.ahxsn@gmail.com</strong></div></div>
+              <div class="prof-row"><div class="prof-ico"><i class="fab fa-linkedin"></i></div><div><small>LinkedIn</small><strong>M-Ahxsn</strong></div></div>
+              <div class="prof-row"><div class="prof-ico"><i class="fas fa-map-marker-alt"></i></div><div><small>Location</small><strong>Lahore, Punjab, Pakistan</strong></div></div>
+              <div class="prof-row"><div class="prof-ico"><i class="fas fa-phone"></i></div><div><small>Phone</small><strong>+92 303 9968120</strong></div></div>
+              <div class="prof-row"><div class="prof-ico"><i class="fas fa-circle"></i></div><div><small>Freelance</small><strong style="color:#16a34a">Available — Immediate Start</strong></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PRICING ═══ -->
+  <section id="pricing" class="sec-pad bg-blk pricing-section">
+    <!-- Double border top -->
+    <div class="dbl-frame-top">
+      <div class="df-line"></div>
+      <div class="df-line"></div>
+    </div>
+
+    <div class="container">
+      <div class="sec-head">
+        <div class="eyebrow light"><span class="rline"></span> Transparent Pricing</div>
+        <h2 class="sec-title wht">Investment <span class="red">Plans</span></h2>
+        <p class="sec-desc" style="color:#888">No hidden fees. No surprises. Choose the plan that fits your needs.</p>
+      </div>
+
+      <div class="price-grid">
+        <!-- STARTER -->
+        <div class="price-card reveal">
+          <div class="price-header">
+            <span class="price-tier">Starter</span>
+            <div class="price-amt">$149<sub>/project</sub></div>
+            <p class="price-desc">Perfect for individuals &amp; small businesses getting started online.</p>
+          </div>
+          <ul class="price-list">
+            <li class="yes"><i class="fas fa-check"></i> WordPress Setup &amp; Config</li>
+            <li class="yes"><i class="fas fa-check"></i> Premium Theme Installation</li>
+            <li class="yes"><i class="fas fa-check"></i> Up to 5 Pages</li>
+            <li class="yes"><i class="fas fa-check"></i> Mobile Responsive Design</li>
+            <li class="yes"><i class="fas fa-check"></i> Basic SEO Setup</li>
+            <li class="yes"><i class="fas fa-check"></i> Contact Form Integration</li>
+            <li class="no"><i class="fas fa-times"></i> Custom Elementor Layouts</li>
+            <li class="no"><i class="fas fa-times"></i> WooCommerce Store</li>
+            <li class="no"><i class="fas fa-times"></i> Priority Support</li>
+          </ul>
+          <a href="#contact" class="price-btn outline-btn">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- PROFESSIONAL -->
+        <div class="price-card featured reveal">
+          <div class="best-badge">⭐ BEST VALUE</div>
+          <div class="price-header">
+            <span class="price-tier">Professional</span>
+            <div class="price-amt">$349<sub>/project</sub></div>
+            <p class="price-desc">For growing businesses that need a powerful, custom web presence.</p>
+          </div>
+          <ul class="price-list">
+            <li class="yes"><i class="fas fa-check"></i> Everything in Starter</li>
+            <li class="yes"><i class="fas fa-check"></i> Custom Elementor Design</li>
+            <li class="yes"><i class="fas fa-check"></i> Up to 10 Pages</li>
+            <li class="yes"><i class="fas fa-check"></i> Advanced SEO Optimization</li>
+            <li class="yes"><i class="fas fa-check"></i> Speed Optimization</li>
+            <li class="yes"><i class="fas fa-check"></i> Google Analytics Setup</li>
+            <li class="yes"><i class="fas fa-check"></i> Social Media Integration</li>
+            <li class="yes"><i class="fas fa-check"></i> 30-Day Free Support</li>
+            <li class="no"><i class="fas fa-times"></i> WooCommerce Store</li>
+          </ul>
+          <a href="#contact" class="price-btn solid-btn">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- E-COMMERCE -->
+        <div class="price-card reveal">
+          <div class="price-header">
+            <span class="price-tier">E-commerce</span>
+            <div class="price-amt">$599<sub>/project</sub></div>
+            <p class="price-desc">Full-featured WooCommerce stores built to convert visitors into buyers.</p>
+          </div>
+          <ul class="price-list">
+            <li class="yes"><i class="fas fa-check"></i> Everything in Professional</li>
+            <li class="yes"><i class="fas fa-check"></i> WooCommerce Setup</li>
+            <li class="yes"><i class="fas fa-check"></i> Payment Gateway Integration</li>
+            <li class="yes"><i class="fas fa-check"></i> Product Catalog (up to 50)</li>
+            <li class="yes"><i class="fas fa-check"></i> Inventory Management</li>
+            <li class="yes"><i class="fas fa-check"></i> Order Tracking System</li>
+            <li class="yes"><i class="fas fa-check"></i> Security Hardening</li>
+            <li class="yes"><i class="fas fa-check"></i> 60-Day Free Support</li>
+            <li class="yes"><i class="fas fa-check"></i> Full Performance Audit</li>
+          </ul>
+          <a href="#contact" class="price-btn outline-btn">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <p class="price-note"><i class="fas fa-info-circle"></i> All prices are starting rates. Final cost depends on project scope. <a href="#contact">Contact me</a> for a custom quote — I offer flexible payment plans.</p>
+    </div>
+
+    <!-- Double border bottom -->
+    <div class="dbl-frame-bottom">
+      <div class="df-line"></div>
+      <div class="df-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="sec-pad">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <div class="eyebrow"><span class="rline"></span> Let's Talk</div>
+          <h2 class="sec-title">Ready to Build Something <span class="red">Amazing?</span></h2>
+          <p class="about-body">Whether you're a startup or an established brand — I'm here to deliver results. Let's turn your vision into a high-performing website.</p>
+          <div class="cinfo">
+            <a href="mailto:m.ahxsn@gmail.com" class="cinfo-item"><div class="cinfo-ico"><i class="fas fa-envelope"></i></div><div><small>Email</small><strong>m.ahxsn@gmail.com</strong></div></a>
+            <a href="tel:+923039968120" class="cinfo-item"><div class="cinfo-ico"><i class="fas fa-phone"></i></div><div><small>Phone</small><strong>+92 303 9968120</strong></div></a>
+            <a href="https://linkedin.com/in/M-Ahxsn" target="_blank" class="cinfo-item"><div class="cinfo-ico"><i class="fab fa-linkedin"></i></div><div><small>LinkedIn</small><strong>M-Ahxsn</strong></div></a>
+            <div class="cinfo-item"><div class="cinfo-ico"><i class="fas fa-map-marker-alt"></i></div><div><small>Location</small><strong>Lahore, Punjab, Pakistan</strong></div></div>
+          </div>
+          <div class="social-row">
+            <a href="mailto:m.ahxsn@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/923039968120" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com/in/M-Ahxsn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form class="cform" id="cForm">
+            <div class="cform-row">
+              <div class="cform-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required />
+              </div>
+              <div class="cform-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="cform-group">
+              <label>Subject</label>
+              <input type="text" placeholder="WordPress Development Project" required />
+            </div>
+            <div class="cform-group">
+              <label>Budget</label>
+              <select>
+                <option value="">Select your budget range</option>
+                <option>$149 – $349 (Starter)</option>
+                <option>$349 – $599 (Professional)</option>
+                <option>$599+ (E-commerce / Custom)</option>
+              </select>
+            </div>
+            <div class="cform-group">
+              <label>Message</label>
+              <textarea rows="5" placeholder="Tell me about your project, goals, and timeline..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-block">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-feedback" id="formMsg"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer id="footer">
+    <div class="footer-wrap">
+      <div class="footer-top">
+        <div class="ft-brand">
+          <a href="#hero" class="nav-logo">M.<span>Ahsan</span></a>
+          <p>Building High-Performance Web Solutions That Convert Visitors Into Customers.</p>
+        </div>
+        <div class="ft-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="ft-contact">
+          <h4>Contact</h4>
+          <a href="mailto:m.ahxsn@gmail.com"><i class="fas fa-envelope"></i> m.ahxsn@gmail.com</a>
+          <a href="tel:+923039968120"><i class="fas fa-phone"></i> +92 303 9968120</a>
+          <p><i class="fas fa-map-marker-alt"></i> Lahore, Punjab, Pakistan</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Muhammad Ahsan. All Rights Reserved.</p>
+        <p>Designed &amp; Developed with <i class="fas fa-heart" style="color:#E0001B"></i> in Lahore</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="btt" id="btt" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
