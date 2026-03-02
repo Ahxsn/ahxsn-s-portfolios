@@ -216,3 +216,31 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (target) { e.preventDefault(); target.scrollIntoView({ behavior:'smooth', block:'start' }); }
   });
 });
+/*form action cform formspreee */
+const contactForm = document.getElementById('cForm');
+const formMsg = document.getElementById('formMsg');
+
+contactForm.addEventListener('submit', async (e) => {
+  e.preventDefault(); // Page refresh hone se rokne ke liye
+  
+  const formData = new FormData(contactForm);
+  
+  try {
+    const response = await fetch("https://formspree.io/f/xnjbyrpg", {
+      method: "POST",
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      formMsg.textContent = "Shukriya! Aapka message bhej diya gaya hai.";
+      formMsg.style.color = "green";
+      contactForm.reset(); // Form ko khaali karne ke liye
+    } else {
+      formMsg.textContent = "Oops! Kuch masla hua hai, dobara koshish karein.";
+      formMsg.style.color = "red";
+    }
+  } catch (error) {
+    formMsg.textContent = "Server se rabta nahi ho pa raha.";
+  }
+});
