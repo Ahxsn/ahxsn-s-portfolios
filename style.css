@@ -708,6 +708,9 @@ h1,h2,h3,h4,h5 { font-family:'Outfit',sans-serif; line-height:1.15; }
   .cursor,.cursor-ring { display:none; }
   body { cursor:auto; }
 }
+.tab-pane{
+   display:none;
+}
 
 /* ── Small Mobile 480px ── */
 @media (max-width:480px) {
