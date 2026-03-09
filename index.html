@@ -462,41 +462,41 @@
             <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
-        <div class="contact-right reveal">
-         <form class="cform" id="cForm" action="https://formspree.io/f/xnjbyrpg" method="POST">
-            <div class="cform-row">
-              <div class="cform-group">
-                <label>Full Name</label>
-                <input type="name" placeholder="John Doe" required />
-              </div>
-              <div class="cform-group">
-                <label>Email Address</label>
-                <input type="name" placeholder="john@example.com" required />
-              </div>
-            </div>
-            <div class="cform-group">
-              <label>Subject</label>
-              <input type="name" placeholder="WordPress Development Project" required />
-            </div>
-            <div class="cform-group">
-              <label>Budget</label>
-              <select>
-                <option value="">Select your budget range</option>
-                <option>$149 – $349 (Starter)</option>
-                <option>$349 – $599 (Professional)</option>
-                <option>$599+ (E-commerce / Custom)</option>
-              </select>
-            </div>
-            <div class="cform-group">
-              <label>Message</label>
-              <textarea rows="5" placeholder="Tell me about your project, goals, and timeline..." required></textarea>
-            </div>
-            <button type="submit" class="btn-primary btn-block">
-              Send Message <i class="fas fa-paper-plane"></i>
-            </button>
-            <p class="form-feedback" id="formMsg"></p>
-          </form>
-        </div>
+<div class="contact-right reveal">
+  <form class="cform" id="cForm" action="https://formspree.io/f/xnjbyrpg" method="POST">
+    <div class="cform-row">
+      <div class="cform-group">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="John Doe" required />
+      </div>
+      <div class="cform-group">
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="john@example.com" required />
+      </div>
+    </div>
+    <div class="cform-group">
+      <label>Subject</label>
+      <input type="text" name="subject" placeholder="WordPress Development Project" required />
+    </div>
+    <div class="cform-group">
+      <label>Budget</label>
+      <select name="budget">
+        <option value="">Select your budget range</option>
+        <option value="starter">$149 – $349 (Starter)</option>
+        <option value="professional">$349 – $599 (Professional)</option>
+        <option value="ecommerce">$599+ (E-commerce / Custom)</option>
+      </select>
+    </div>
+    <div class="cform-group">
+      <label>Message</label>
+      <textarea name="message" rows="5" placeholder="Tell me about your project, goals, and timeline..." required></textarea>
+    </div>
+    <button type="submit" class="btn-primary btn-block">
+      Send Message <i class="fas fa-paper-plane"></i>
+    </button>
+    <p class="form-feedback" id="formMsg"></p>
+  </form>
+</div>
       </div>
     </div>
   </section>
